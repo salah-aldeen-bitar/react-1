@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import {Part , PartDesc , PartTitle , Span , Icon , Line , WorkSection , WorkTitle} from './style.js'
 import axios from "axios";
 import './style.css';
-import "../../../src/js/data.json";
+import api from "../../../src/js/data.json";
 
 
 class Work extends Component{
@@ -12,13 +12,13 @@ class Work extends Component{
             works : []
         }
             componentDidMount (){ 
-                axios.get('js/data.json').then(res => {this.setState({works: res.data.works})})
+                axios.get(api).then(res => {this.setState({works: res.api.works})})
             }
             
                 
  render(){
     const {works} = this.state;
-    const WorkList = works.map( WorkItem =>{
+    const WorkList = api.works.map( WorkItem =>{
         return(
             
             <div className="wwww">
