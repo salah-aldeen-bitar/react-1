@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import {Part , PartDesc , PartTitle , Span , Icon , Line , WorkSection , WorkTitle} from './style.js'
 import axios from "axios";
 import './style.css';
+import "../../../src/js/data.json";
 
 
 class Work extends Component{

@@ -1,10 +1,11 @@
 import React from "react";
-import "./style.css"; 
+import "./style.css";
+import img_home from "../../../src/images/Home/1.mp4"; 
 const Home = () =>{
     return(
         <div className="HomeSection">
             
-             <video  src="images/Home/1.mp4" autoPlay muted loop style={{ height:'auto',width:'100%'}}></video>
+             <video  src={img_home} autoPlay muted loop style={{ height:'auto',width:'100%'}}></video>
              <div className="obacity-1" >
              <h2 className="HomeTitle">salah bitar</h2>
              </div>
