@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const SocialMedia = styled.div`
     height: auto;
     overflow: hidden;
+    padding-top:100px;
+    
 
 `
 export const Social = styled.div`

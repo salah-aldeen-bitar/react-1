@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const Drop =styled.div`
     padding: 50px 0;
     text-align: center;
+    padding-top:100px
 
 `
 

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {Social,SocialMedia,Span,SpanInfo,I,P} from "./style.js";
 import axios from "axios";
 import Footer from "../foooter/index.js";
-
+import "./style.css";
 
 
 class Socialmedia extends Component{
@@ -29,13 +29,16 @@ class Socialmedia extends Component{
         })
         return(
             <React.Fragment>
+           <div className="container-social">    
             <SocialMedia>
        
                 {SocialList}
                 
                 
             </SocialMedia>
+            </div> 
             <Footer/>
+
             </React.Fragment>
         )
     }

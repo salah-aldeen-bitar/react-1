@@ -1,0 +1,18 @@
+
+@media(max-width:568px){
+    .container-social .eeJxEI{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+     .container-social .frapwS{
+        width: 100%;
+        
+      }
+      .container-social .hLchgs{
+        width: 100%;
+      }
+     .container-social .cDWfxs{
+        width: 100%;
+      }
+}
