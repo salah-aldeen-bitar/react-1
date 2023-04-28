@@ -1,0 +1,154 @@
+
+.obacity-1{
+    background: rgb(0,0,0,0.6); 
+    height:200px;
+    width:100%;
+    z-index:50;
+    position:absolute;
+    top:0;
+    bottom:400px;
+    left:0;
+    right:0; 
+       }
+.HomeSection{
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;}
+ 
+
+  .HomeIn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    box-sizing: border-box;}
+
+
+.HomeTitle{
+    font-size: 60px;
+    margin: 100px;
+    font-weight: bold;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #fff;}
+  
+
+
+   .Homeinfo{
+    font-size: 50px;
+    padding-top:200px;
+    color: #eb5424;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+  .HomeDesc{
+    font-size: 35px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight:bold;
+    box-sizing: border-box;
+    overflow: hidden;}
+    
+
+  span{
+    color:#000;
+    font-weight:bolder;
+    box-sizing: border-box;
+    overflow: hidden;}
+
+
+    .HomeBtn{
+    background: #eb5424;
+    color: #fff;
+    font-size: 18px;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+    
+    .HomeBtn:hover{
+        color: #eb5424;
+        background-color: #000;
+        transition: 0.9s ease;
+        
+    }
+
+    @media (max-width:868px) {
+        .obacity-1{
+            height: 140px;
+        }
+       .App .HomeSection{
+            padding-top: 92px ;
+        }
+      .HomeSection .HomeTitle {
+          font-size: 30px;
+          color: rgb(28, 112, 65);
+      }
+      .HomeBtn{
+        height: 50px;
+        width: 120px;
+        font-size: 15px;
+        text-align: center;
+        padding: 10px 0;
+      }
+      
+       .HomeTitle {
+          font-size: 25px
+      }
+      .HomeIn .Homeinfo{
+        font-size: 25px;
+        padding-top: 90px;
+      }
+      .HomeIn .HomeDesc {
+          font-size: 15px
+      }
+  }
+  
+  @media (max-width:539px) {
+     .HomeTitle {
+          font-size: 20px;
+      }
+      .HomeSection .HomeTitle {
+        font-size: 25px;
+    }
+    .HomeTitle {
+        font-size: 20px
+    }
+  
+    .HomeIn .Homeinfo{
+        font-size: 20px;
+        padding-top: 160px;
+      }
+      .HomeIn{
+        width: 100%;
+      }
+      .HomeIn .HomeDesc{
+        font-size: 10px;
+       
+
+      }
+      .HomeBtn{
+        height: 35px;
+        width: 100px;
+        font-size: 10px;
+        text-align: center;
+        
+        margin-bottom: 50px;
+      }
+    
+    }
+

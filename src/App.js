@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React , {Component} from 'react';
+import { BrowserRouter , Route, Routes } from 'react-router-dom';
+import Navbar2 from './componet/navbar';
+import Contact from './componet/contact';
+import Index from './componet/index';
+import About from './componet/protflio';
+import Protflio from './componet/profile';
+import Work from './componet/work';
+import Socialmedia from './componet/socialmedia';
 
-function App() {
+class App extends Component  {
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <BrowserRouter>
+    <div className='app'>
+    <Navbar2 />
+    
+     <Routes>
+          <Route path='/' Component={Index} />
+          <Route path='/about' Component={About}/>
+          <Route path='/work' Component={Work}/>
+          <Route path='/protflio' Component={Protflio}/>
+          <Route path='/socialmedia' Component={Socialmedia}/>
+          <Route path='/contact' Component={Contact} />
+    </Routes>
+    
     </div>
+    </BrowserRouter>
+  
   );
+}
 }
 
 export default App;
