@@ -3,7 +3,7 @@ import {Social,SocialMedia,Span,SpanInfo,I,P} from "./style.js";
 import axios from "axios";
 import Footer from "../foooter/index.js";
 import "./style.css";
-import api_social from "../../js/datasocial.js"
+import api_social from "../../../src/js/datasocial.js"
 
 
 class Socialmedia extends Component{
